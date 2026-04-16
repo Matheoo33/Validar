@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <title>Login</title>
-     <link rel="stylesheet"
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Login</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
 
-<div class="container mt-5">
+<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
+
+<div class="container">
     <div class="row justify-content-center">
-         <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">Inicio de Sesión</div>
-                        <div class="card-body">
-                            <form action="validar.php" method="post">
-                                <div class="form-group">
-                                     <label for="usuario">Usuario:</label>
-                                     <input type="text" class="form-control" id="usuario" name="usuario" required>
-                                     </div>
-                                    <div class="form-group">
-                                        <label for="contrasena">Contraseña:</label>
-                                        <input type="password" class="form-control" id="contrasena"
-name="contrasena" required>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Ingresar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-md-5 col-lg-4">
+
+            <div class="card shadow-lg border-0">
+                
+                <div class="card-header bg-primary text-white text-center">
+                    <h4 class="mb-0">Inicio de Sesión</h4>
                 </div>
+
+                <div class="card-body p-4">
+
+                    <form action="validar.php" method="post">
+
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label>
+                            <input type="text"
+                            class="form-control form-control-lg"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Ingrese su usuario"
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password"
+                            class="form-control form-control-lg"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Ingrese su contraseña"
+                            required>
+                        </div>
+
+                        <button type="submit"
+                        class="btn btn-primary btn-lg btn-block mt-3">
+                            Ingresar
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="card-footer text-center">
+                    <small class="text-muted">Sistema de acceso</small>
+                </div>
+
             </div>
 
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js">
-</script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
