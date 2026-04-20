@@ -21,7 +21,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows == 1) {
  // Inicio de sesión exitoso
- echo "Inicio de sesión exitoso. Bienvenido, $usuario.";
+ header('Location: Inicio.html');
+    exit;
 } else {
  // Error en las credenciales
  echo "Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.";
